@@ -14,29 +14,29 @@ let swiper = new Swiper(".mySwiper", {
 
 // INCREMENTING COUNTER
 
-function increment() {
-  counters.forEach((item) => {
-    item.innerText = "0";
+// function increment() {
+//   counters.forEach((item) => {
+//     item.innerText = "0";
 
-    const incrementNumber = () => {
-      const target = +item.getAttribute("data-target");
-      const c = +item.innerText;
-      const incrementN = target / 50;
-      if (c < target) {
-        item.innerText = `${c + incrementN}`;
+//     const incrementNumber = () => {
+//       const target = +item.getAttribute("data-target");
+//       const c = +item.innerText;
+//       const incrementN = target / 50;
+//       if (c < target) {
+//         item.innerText = `${c + incrementN}`;
 
-        setTimeout(incrementNumber, 10);
-      }
-    };
+//         setTimeout(incrementNumber, 10);
+//       }
+//     };
 
-    incrementNumber();
-  });
+//     incrementNumber();
+//   });
 
-  return;
-}
+//   return;
+// }
 
-window.addEventListener("scroll", () => {
-  if (height > boxTop) {
-    increment();
-  }
-});
+// window.addEventListener("scroll", () => {
+//   if (height > boxTop) {
+//     increment();
+//   }
+// });
